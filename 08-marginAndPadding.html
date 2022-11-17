@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  </head>
+  <style>
+    .text{
+        background-color: #ffa;
+    }
+    
+
+    @media screen and (min-width:768px) {
+        .pic-card .col-12:last-child{
+        margin-top: -100px;
+    }
+    }
+  </style>
+  <body>
+
+    <!-- Note
+        1.margin使用的class是哪個英文字母代表? m
+        2.padding使用的class是哪個英文字母代表? p
+        3.margin-left(start):ms margin-rigt(end):me
+        4.margin與padding各有幾個數值可供設定? 7個(0~5、auto)
+        5.margin與padding若要同時設定左右可以怎麼做? mx-auto
+        6.margin與padding若要同時設定上下可以怎麼做? my
+    -->
+
+    <div class="container pic-card">
+        <div class="row">
+            <div class="col-12 col-md-7 mb-2 mb-md-0">
+                <div class="pic">
+                    <img src="https://picsum.photos/300/150?random=1" class="w-100 img-thumbnail"> 
+                </div>
+            </div>
+            <div class="col-12 col-md-7 ms-auto">
+                <div class="text p-4">
+                    <h3>title</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam error culpa accusantium voluptates laborum incidunt commodi voluptatibus in inventore, deleniti repellat ut, impedit suscipit aspernatur aliquam ad numquam exercitationem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  
+</html>
