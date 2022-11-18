@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  </head>
+  <style>
+    .path{
+      background: #faa;
+    }
+    .breadcrumb{
+      background-color: transparent;
+    }
+    .breadcrumb-item a{
+      color: #000;
+      text-decoration: none;
+    }
+    .breadcrumb-item.active{
+      color: blue;
+    }
+  </style>
+  <body>
+
+    <!-- 
+      1.麵包屑要做固定寬度怎麼做?加上container
+      2.如果想自訂背景色彩的話可以怎麼做?
+    -->
+
+    <div class="path">
+      <div class="container">        
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+      </div>
+    </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  
+</html>
