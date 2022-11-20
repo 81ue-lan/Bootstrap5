@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  </head>
+  <body>
+
+        <!-- 
+            modal 的用途?
+            modal的控制有哪些方式? data-bs-target跟data-bs-toggle
+            如何垂直置中modal? .modal-dialog-centered
+            如何處裡過長的資料 .modal-dialog-scrollable
+            如何製作滿版的modal?.modal-fullscreen
+        -->
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">登入</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-xl-down modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat libero facere adipisci eius autem, eos enim, repellendus suscipit architecto vero natus nisi saepe, corporis asperiores consequuntur reiciendis consectetur ea!
+          Ratione laboriosam eaque blanditiis sed repellendus quas a maiores, ea harum, exercitationem distinctio dicta alias esse quaerat, odio inventore quidem fugit quis nam ipsam atque! Est ullam illo magnam repellat.
+          Saepe accusantium, animi in sapiente sint odit vitae ipsa ea nesciunt omnis repellendus corporis reprehenderit exercitationem, ratione adipisci? Illum magni, rem minus ratione provident ullam illo repudiandae soluta? Quas, quam!
+          Veritatis quod ea tenetur ad alias facilis, perferendis facere eos rerum! Culpa aliquam excepturi, veniam quis natus cupiditate molestiae quasi explicabo eius eos, minus sint recusandae pariatur dicta architecto repellat.
+          Vitae, exercitationem reprehenderit dolores tempore veniam voluptas quam dolorem quae? Consequatur nesciunt ipsum laudantium eum quod odio nihil, labore quibusdam, quidem, dignissimos reprehenderit sequi debitis impedit obcaecati nisi dolorem ut.
+          Dolor molestias similique doloremque, atque nisi eaque modi sequi magnam quam officia, consectetur possimus doloribus voluptatibus tempora in ad distinctio consequatur obcaecati alias! Blanditiis quaerat delectus consequuntur nisi dolores iure?
+          Eligendi atque aperiam alias saepe minima voluptatibus nulla, labore culpa quisquam impedit rem accusantium temporibus, perspiciatis quam repellendus obcaecati voluptatum quo? Molestias debitis et perspiciatis id doloribus? Itaque, assumenda culpa?
+          Fuga nemo veritatis eos! Quod rem laudantium possimus nam, nisi expedita eum quasi laboriosam dolorem excepturi ullam reiciendis consequuntur! Itaque eos odio soluta, impedit quaerat explicabo tempora saepe quam harum.
+          Aspernatur nemo debitis laudantium dolores esse. Reprehenderit, consequatur voluptates? Iure placeat iste dolor voluptatibus tempore dolorum sed! Ipsa, cum! Nam tempora accusamus sapiente, architecto amet minima asperiores quisquam cumque enim.
+          Unde iusto sit architecto ut tenetur. Ea alias vel voluptatem deleniti culpa necessitatibus hic fugit placeat odio neque, ipsum atque. Id impedit illum saepe nemo. Rem fugiat excepturi quo perferendis!
+          Architecto porro adipisci assumenda perspiciatis ab rerum incidunt nihil accusamus autem quos facilis, perferendis dolore deserunt maxime et quia expedita a commodi odit voluptas voluptatibus quis eaque? Odio, similique neque?
+          Voluptate provident exercitationem laudantium sit, voluptates minima fugit dolorem iusto, eligendi similique dolores temporibus odio eum aspernatur sapiente facilis ratione magni quibusdam reiciendis quidem consequatur cum alias dignissimos. Facilis, tempora.
+          At incidunt ipsa non voluptate deleniti rerum enim necessitatibus illum vitae nobis voluptates commodi velit quisquam perferendis consectetur nostrum magnam sint recusandae iste ullam veniam, porro dicta! Ratione, perspiciatis voluptas.
+          Ducimus similique quaerat, quia fugiat aspernatur dolorem odit aliquid maxime deleniti sint esse magnam? Velit reprehenderit accusamus sapiente possimus, eligendi alias odio necessitatibus saepe, laboriosam consectetur tempore vitae corrupti voluptatibus.
+          Ea voluptates quisquam enim doloribus distinctio similique doloremque dicta vel delectus incidunt, earum natus velit at mollitia, aliquid obcaecati voluptas nisi explicabo? Laborum cumque non quo earum minus error repellendus.
+          Voluptates praesentium quasi quam vero aperiam modi eaque a rerum dolore beatae, itaque, velit laudantium commodi? Iste sunt aperiam quaerat quo fugit atque sint sed, labore eaque corrupti, in quas.
+          Recusandae corrupti laborum tempore dolore error molestias in quae a rem. Eligendi voluptatem dolores accusamus odit repudiandae maiores consequatur laboriosam eaque repellendus fuga. Voluptatibus totam nihil numquam explicabo consequuntur ipsam?
+          Ullam necessitatibus at architecto voluptatem non? Eligendi sed nostrum, tempore commodi nobis expedita aliquam laboriosam eaque itaque ut praesentium quo dicta illum hic optio, minus corrupti earum voluptate consectetur veniam.
+          Dolores, incidunt ducimus! Deleniti perferendis tenetur nobis minima ab maxime ex est, repellendus maiores quam corporis nulla vel quidem laudantium laborum nam dolor fugiat quod quo facere placeat blanditiis nisi?
+          Vero commodi cumque esse ad possimus eaque asperiores quibusdam quia earum? Iste, nobis. Dignissimos atque fugiat blanditiis officia natus sunt corrupti, cum alias voluptate fuga quibusdam doloremque repellendus beatae pariatur.
+          Et esse illo accusamus temporibus asperiores accusantium explicabo quis at, voluptatibus dicta saepe tempore recusandae, eaque velit laborum labore error nostrum? Harum nobis quasi debitis labore earum saepe sit nihil.
+          Voluptate esse corrupti veniam, illo animi, praesentium, necessitatibus numquam id ab voluptatum dolor minus. Ab blanditiis totam dicta qui itaque molestias ratione nihil minima, veniam aperiam dolor velit perspiciatis repellendus!
+          Illo mollitia ut reprehenderit voluptate recusandae aspernatur, placeat veniam dolorum id velit tempore vero facere voluptates iusto dolore modi? Voluptas magnam quisquam quidem dolor atque corrupti tempora laboriosam voluptates iure!
+          Nostrum tempore porro corrupti ut maxime dicta vero hic a ab aliquam excepturi harum quae minus ea corporis, assumenda odio consequuntur, quaerat laboriosam dignissimos illo enim labore error. Ab, similique?
+          Sunt iure enim molestiae cum distinctio dicta nulla maxime dolorum incidunt quos ad cumque iusto, omnis architecto itaque pariatur laboriosam quia amet error ex similique officia possimus quam facilis! Excepturi?
+          Dignissimos atque maxime fugit ea qui laboriosam, fuga quod quasi reprehenderit voluptate a eaque natus fugiat rem totam earum eum porro voluptatibus modi consectetur. Eaque natus fugiat ratione! Laboriosam, sit.
+          Consectetur fugiat, quo reprehenderit magnam ut quod mollitia eveniet a eius? Necessitatibus rem asperiores autem soluta harum dolores odio, ipsum suscipit dolor labore voluptates excepturi hic quas at incidunt explicabo.
+          Ducimus inventore dolorum ipsa, labore atque corrupti minima tenetur exercitationem culpa, perspiciatis possimus placeat. Veniam aut expedita iure doloribus itaque ducimus repudiandae illum quos sit consectetur? Perspiciatis sapiente ducimus veritatis?
+          Sed ea dolorum eius eaque quam sequi, aspernatur optio facilis in minus quo corporis, odio, suscipit rem repellat labore veniam illo cupiditate eum voluptatum. Ducimus illo labore nobis distinctio velit!
+          Quis obcaecati a dolores quo omnis quas officia cupiditate ea commodi delectus, molestiae provident fugit tenetur eligendi iure est accusantium accusamus illo? Maxime laudantium culpa doloremque sunt fugit reprehenderit ea?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  
+</html>
