@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  </head>
+  <style>
+    .test{
+        width: 200px;
+        height: 200px;
+    }
+    .pic{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .pic img{
+      object-fit:cover;
+    }
+  </style>
+  <body>
+
+    <!-- 
+        overflow有哪兩種預設效果?overflow-auto、overflow-hidden
+    -->
+
+    <div class="test bg-info overflow-auto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor architecto ipsam! Nostrum reprehenderit, illo suscipit at a libero. Dicta mollitia eaque debitis quos iusto et sequi eum in similique.</p>
+    </div>
+
+    <div class="pic overflow-hidden">
+          <img src="https://picsum.photos/200/300?random=1" class="w-100 h-100"> 
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  
+</html>
